@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IT on XiYu.PRO-席宇博客</title>
+    <link>https://www.xiyu.pro/categories/it/</link>
+    <description>Recent content in IT on XiYu.PRO-席宇博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 30 Aug 2020 13:57:39 +0800</lastBuildDate>
+    
+	<atom:link href="https://www.xiyu.pro/categories/it/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ngnix使用CDN后正确获取访客IP</title>
+      <link>https://www.xiyu.pro/archives/9/</link>
+      <pubDate>Sun, 30 Aug 2020 13:57:39 +0800</pubDate>
+      
+      <guid>https://www.xiyu.pro/archives/9/</guid>
+      <description>如果是使用一层cdn，那么在nginx的配置文件http{}字段中加入
+ set_real_ip_from 0.0.0.0/0; real_ip_header X-Forwarded-For; 即可。
+如果是使用了两层或以上cdn(使用了cdn和web防火墙也适用)，那么在nginx的配置文件http{}字段中加入
+ set_real_ip_from 0.0.0.0/0; real_ip_header X-Forwarded-For; real_ip_recursive on; 即可。</description>
+    </item>
+    
+    <item>
+      <title>ngnix开启HSTS</title>
+      <link>https://www.xiyu.pro/archives/8/</link>
+      <pubDate>Mon, 17 Aug 2020 15:43:56 +0800</pubDate>
+      
+      <guid>https://www.xiyu.pro/archives/8/</guid>
+      <description>什么是HSTS  HTTP严格传输安全协议（英语：HTTP Strict Transport Security，简称：HSTS），是一套由互联网工程任务组发布的互联网安全策略机制。网站可以选择使用HSTS策略，来让浏览器强制使用HTTPS与网站进行通信，以减少会话劫持风险。 HSTS可以很大程度上解决SSL剥离攻击，因为只要浏览器曾经与服务器创建过一次安全连接，之后浏览器会强制使用HTTPS，即使链接被换成了HTTP。 ##开启HSTS证书的前提## 正确设置了SSL证书，网站可以通过https协议正常访问 ##ngnix如何开启HSTS## 在网站配置文件server{}中加入
+ add_header Strict-Transport-Security &amp;quot;max-age=31536000; 如果追求更好的安全效果可以改成加入
+add_header Strict-Transport-Security &amp;quot;max-age=31536000; includeSubdomains; preload&amp;quot;; includeSubdomains参数会使得浏览器在请求所有子域名时都强制要求HTTPS协议，如果没有给所有子域名都添加SSL证书的打算，请不要输入这个参数 </description>
+    </item>
+    
+    <item>
+      <title>如何清理域名解析的本地dns缓存</title>
+      <link>https://www.xiyu.pro/archives/4/</link>
+      <pubDate>Fri, 03 Jul 2020 15:43:56 +0800</pubDate>
+      
+      <guid>https://www.xiyu.pro/archives/4/</guid>
+      <description>清理本地缓存的快捷方法：
+1. Win+R快捷键
+2. 输入：cmd
+3. 输入：ipconfig/flushdns 然后按回车 4. 愉快的访问需要访问的网站</description>
+    </item>
+    
+    <item>
+      <title>解决typecho在微信内置浏览器中评论错误的问题</title>
+      <link>https://www.xiyu.pro/archives/3/</link>
+      <pubDate>Mon, 22 Jun 2020 15:43:56 +0800</pubDate>
+      
+      <guid>https://www.xiyu.pro/archives/3/</guid>
+      <description>解决办法 打开typecho数据库下的表&amp;quot;typecho_comments&amp;rdquo;,把&amp;quot;agent&amp;quot;参数的长度从200修改到500，大功告成！
+ 出现原因 世界第一奇葩浏览器微信内置浏览器某些情况下的UA会达到240以上，为防止微信内置浏览器以后又在UA里增加字段，直接把typecho接收的UA长度设置成500即可。</description>
+    </item>
+    
+  </channel>
+</rss>

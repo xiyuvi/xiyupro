@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="generator" content="WordPress 4.8.2">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="" />
+  <meta property="og:url" content="https://www.xiyu.pro/archives/9/" />
+  <link rel="canonical" href="https://www.xiyu.pro/archives/9/" /><link rel="preload" href="/js/highlight.pack.js" as="script" /><link rel="alternate" type="application/atom+xml" href="https://www.xiyu.pro/index.xml" title="XiYu.PRO-席宇博客">
+
+  <script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+           "@type": "WebPage",
+           "@id": "https:\/\/www.xiyu.pro\/"
+      },
+      "articleSection" : "archives",
+      "name" : "ngnix使用CDN后正确获取访客IP",
+      "headline" : "ngnix使用CDN后正确获取访客IP",
+      "description" : "如果是使用一层cdn，那么在nginx的配置文件http{}字段中加入\n set_real_ip_from 0.0.0.0\/0; real_ip_header X-Forwarded-For; 即可。\n如果是使用了两层或以上cdn(使用了cdn和web防火墙也适用)，那么在nginx的配置文件http{}字段中加入\n set_real_ip_from 0.0.0.0\/0; real_ip_header X-Forwarded-For; real_ip_recursive on; 即可。",
+      "inLanguage" : "zh-CN",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2020",
+      "datePublished": "2020-08-30 13:57:39 \u002b0800 CST",
+      "dateModified" : "2020-08-30 13:57:39 \u002b0800 CST",
+      "url" : "https:\/\/www.xiyu.pro\/archives\/9\/",
+      "keywords" : [  ]
+  }
+</script>
+<title>ngnix使用CDN后正确获取访客IP - XiYu.PRO-席宇博客</title>
+  <meta property="og:title" content="ngnix使用CDN后正确获取访客IP - XiYu.PRO-席宇博客" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="如果是使用一层cdn，那么在nginx的配置文件http{}字段中加入
+ set_real_ip_from 0.0.0.0/0; real_ip_header X-Forwarded-For; 即可。
+如果是使用了两层或以上cdn(使用了cdn和web防火墙也适用)，那么在nginx的配置文件http{}字段中加入
+ set_real_ip_from 0.0.0.0/0; real_ip_header X-Forwarded-For; real_ip_recursive on; 即可。" />
+  <meta name="description" content="如果是使用一层cdn，那么在nginx的配置文件http{}字段中加入
+ set_real_ip_from 0.0.0.0/0; real_ip_header X-Forwarded-For; 即可。
+如果是使用了两层或以上cdn(使用了cdn和web防火墙也适用)，那么在nginx的配置文件http{}字段中加入
+ set_real_ip_from 0.0.0.0/0; real_ip_header X-Forwarded-For; real_ip_recursive on; 即可。" />
+  <meta property="og:locale" content="zh-CN" />
+  <link rel="stylesheet" href="/css/flexboxgrid-6.3.1.min.css" />
+  <link rel="stylesheet" href="/css/github-markdown.css" />
+  <link rel="stylesheet" href="/css/highlight/tomorrow.min.css" />
+  <link rel="stylesheet" href="/css/index.css">
+
+  
+
+  <link href="/index.xml" rel="alternate" type="application/rss+xml"
+    title="XiYu.PRO-席宇博客">
+  
+ 
+  
+  
+  <link rel="shortcut icon" href="/icon.ico" type="image/x-icon" />
+  
+</head>
+
+<body>
+  <article class="post " id="article">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="site-header">
+          
+<header>
+  <div class="signatures site-title">
+    <a href="/">Xi Yu</a>
+  </div>
+</header>
+<div class="row end-xs">
+  
+  
+</div>
+<div class="header-line"></div>
+
+        </div>
+        <header class="post-header">
+          <h1 class="post-title">ngnix使用CDN后正确获取访客IP</h1>
+          
+          <div class="row post-desc">
+            <div class="col-xs-6">
+              
+              <time class="post-date" datetime="2020-08-30 13:57:39 CST">
+                2020-08-30
+              </time>
+              
+            </div>
+            <div class="col-xs-6">
+              
+            </div>
+          </div>
+          
+        </header>
+
+        <div class="post-content markdown-body">
+          
+          <p>如果是使用一层cdn，那么在nginx的配置文件http{}字段中加入</p>
+<pre><code>    set_real_ip_from 0.0.0.0/0;
+    real_ip_header X-Forwarded-For;
+</code></pre><p>即可。</p>
+<p>如果是使用了两层或以上cdn(使用了cdn和web防火墙也适用)，那么在nginx的配置文件http{}字段中加入</p>
+<pre><code>    set_real_ip_from 0.0.0.0/0;
+    real_ip_header X-Forwarded-For;
+    real_ip_recursive on;
+</code></pre><p>即可。</p>
+
+        </div>
+
+        <div class="row middle-xs">
+          <div class="col-xs-12">
+            
+            <div class="post-category">
+              <a href="/categories/it/">
+                IT
+              </a>
+            </div>
+            
+          </div>
+        </div>
+        
+          <div class="row">
+            <div class="col-xs-12">
+              
+            </div>
+          </div>
+
+          
+
+
+          
+          
+          <div style="height: 50px;"></div>
+          
+        
+
+        <div class="site-footer">
+  
+  <div class="site-footer-item">
+    <a href="/about/" target="_blank">About</a>
+  </div>
+  
+  
+</div>
+
+      </div>
+    </div>
+  </article>
+  <script>
+    var postTitleValue = document.querySelector(".post-title").innerHTML.trim();
+    if (postTitleValue.slice(0, 2) === "加密") {
+      var oScript = document.createElement("script");
+      oScript.src = "/js/aes.js";
+      document.body.appendChild(oScript);
+    }
+  </script>
+  <script src="/js/highlight.pack.js"></script>
+
+
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  
+  
+    
+    
+  
+</script>
+<script src="/js/tj.js"></script>
+  
+  <script src="/js/blank.js"></script>
+</body>
+
+</html>

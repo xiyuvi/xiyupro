@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="generator" content="WordPress 4.8.2">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="" />
+  <meta property="og:url" content="https://www.xiyu.pro/archives/8/" />
+  <link rel="canonical" href="https://www.xiyu.pro/archives/8/" /><link rel="preload" href="/js/highlight.pack.js" as="script" /><link rel="alternate" type="application/atom+xml" href="https://www.xiyu.pro/index.xml" title="XiYu.PRO-席宇博客">
+
+  <script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+           "@type": "WebPage",
+           "@id": "https:\/\/www.xiyu.pro\/"
+      },
+      "articleSection" : "archives",
+      "name" : "ngnix开启HSTS",
+      "headline" : "ngnix开启HSTS",
+      "description" : "什么是HSTS  HTTP严格传输安全协议（英语：HTTP Strict Transport Security，简称：HSTS），是一套由互联网工程任务组发布的互联网安全策略机制。网站可以选择使用HSTS策略，来让浏览器强制使用HTTPS与网站进行通信，以减少会话劫持风险。 HSTS可以很大程度上解决SSL剥离攻击，因为只要浏览器曾经与服务器创建过一次安全连接，之后浏览器会强制使用HTTPS，即使链接被换成了HTTP。 ##开启HSTS证书的前提## 正确设置了SSL证书，网站可以通过https协议正常访问 ##ngnix如何开启HSTS## 在网站配置文件server{}中加入\n add_header Strict-Transport-Security \u0026quot;max-age=31536000; 如果追求更好的安全效果可以改成加入\nadd_header Strict-Transport-Security \u0026quot;max-age=31536000; includeSubdomains; preload\u0026quot;; includeSubdomains参数会使得浏览器在请求所有子域名时都强制要求HTTPS协议，如果没有给所有子域名都添加SSL证书的打算，请不要输入这个参数 ",
+      "inLanguage" : "zh-CN",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2020",
+      "datePublished": "2020-08-17 15:43:56 \u002b0800 CST",
+      "dateModified" : "2020-08-17 15:43:56 \u002b0800 CST",
+      "url" : "https:\/\/www.xiyu.pro\/archives\/8\/",
+      "keywords" : [  ]
+  }
+</script>
+<title>ngnix开启HSTS - XiYu.PRO-席宇博客</title>
+  <meta property="og:title" content="ngnix开启HSTS - XiYu.PRO-席宇博客" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="什么是HSTS  HTTP严格传输安全协议（英语：HTTP Strict Transport Security，简称：HSTS），是一套由互联网工程任务组发布的互联网安全策略机制。网站可以选择使用HSTS策略，来让浏览器强制使用HTTPS与网站进行通信，以减少会话劫持风险。 HSTS可以很大程度上解决SSL剥离攻击，因为只要浏览器曾经与服务器创建过一次安全连接，之后浏览器会强制使用HTTPS，即使链接被换成了HTTP。 ##开启HSTS证书的前提## 正确设置了SSL证书，网站可以通过https协议正常访问 ##ngnix如何开启HSTS## 在网站配置文件server{}中加入
+ add_header Strict-Transport-Security &quot;max-age=31536000; 如果追求更好的安全效果可以改成加入
+add_header Strict-Transport-Security &quot;max-age=31536000; includeSubdomains; preload&quot;; includeSubdomains参数会使得浏览器在请求所有子域名时都强制要求HTTPS协议，如果没有给所有子域名都添加SSL证书的打算，请不要输入这个参数 " />
+  <meta name="description" content="什么是HSTS  HTTP严格传输安全协议（英语：HTTP Strict Transport Security，简称：HSTS），是一套由互联网工程任务组发布的互联网安全策略机制。网站可以选择使用HSTS策略，来让浏览器强制使用HTTPS与网站进行通信，以减少会话劫持风险。 HSTS可以很大程度上解决SSL剥离攻击，因为只要浏览器曾经与服务器创建过一次安全连接，之后浏览器会强制使用HTTPS，即使链接被换成了HTTP。 ##开启HSTS证书的前提## 正确设置了SSL证书，网站可以通过https协议正常访问 ##ngnix如何开启HSTS## 在网站配置文件server{}中加入
+ add_header Strict-Transport-Security &quot;max-age=31536000; 如果追求更好的安全效果可以改成加入
+add_header Strict-Transport-Security &quot;max-age=31536000; includeSubdomains; preload&quot;; includeSubdomains参数会使得浏览器在请求所有子域名时都强制要求HTTPS协议，如果没有给所有子域名都添加SSL证书的打算，请不要输入这个参数 " />
+  <meta property="og:locale" content="zh-CN" />
+  <link rel="stylesheet" href="/css/flexboxgrid-6.3.1.min.css" />
+  <link rel="stylesheet" href="/css/github-markdown.css" />
+  <link rel="stylesheet" href="/css/highlight/tomorrow.min.css" />
+  <link rel="stylesheet" href="/css/index.css">
+
+  
+
+  <link href="/index.xml" rel="alternate" type="application/rss+xml"
+    title="XiYu.PRO-席宇博客">
+  
+ 
+  
+  
+  <link rel="shortcut icon" href="/icon.ico" type="image/x-icon" />
+  
+</head>
+
+<body>
+  <article class="post " id="article">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="site-header">
+          
+<header>
+  <div class="signatures site-title">
+    <a href="/">Xi Yu</a>
+  </div>
+</header>
+<div class="row end-xs">
+  
+  
+</div>
+<div class="header-line"></div>
+
+        </div>
+        <header class="post-header">
+          <h1 class="post-title">ngnix开启HSTS</h1>
+          
+          <div class="row post-desc">
+            <div class="col-xs-6">
+              
+              <time class="post-date" datetime="2020-08-17 15:43:56 CST">
+                2020-08-17
+              </time>
+              
+            </div>
+            <div class="col-xs-6">
+              
+            </div>
+          </div>
+          
+        </header>
+
+        <div class="post-content markdown-body">
+          
+          <h2 id="什么是hsts">什么是HSTS</h2>
+<blockquote>
+<p>HTTP严格传输安全协议（英语：HTTP Strict Transport Security，简称：HSTS），是一套由互联网工程任务组发布的互联网安全策略机制。网站可以选择使用HSTS策略，来让浏览器强制使用HTTPS与网站进行通信，以减少会话劫持风险。
+HSTS可以很大程度上解决SSL剥离攻击，因为只要浏览器曾经与服务器创建过一次安全连接，之后浏览器会强制使用HTTPS，即使链接被换成了HTTP。
+##开启HSTS证书的前提##
+正确设置了SSL证书，网站可以通过https协议正常访问
+##ngnix如何开启HSTS##
+在网站配置文件server{}中加入</p>
+</blockquote>
+<pre><code>add_header Strict-Transport-Security &quot;max-age=31536000;
+</code></pre><p>如果追求更好的安全效果可以改成加入</p>
+<pre><code>add_header Strict-Transport-Security &quot;max-age=31536000; includeSubdomains; preload&quot;;
+
+</code></pre><h4 id="includesubdomains参数会使得浏览器在请求所有子域名时都强制要求https协议如果没有给所有子域名都添加ssl证书的打算请不要输入这个参数">includeSubdomains参数会使得浏览器在请求所有子域名时都强制要求HTTPS协议，如果没有给所有子域名都添加SSL证书的打算，请不要输入这个参数</h4>
+
+        </div>
+
+        <div class="row middle-xs">
+          <div class="col-xs-12">
+            
+            <div class="post-category">
+              <a href="/categories/it/">
+                IT
+              </a>
+            </div>
+            
+          </div>
+        </div>
+        
+          <div class="row">
+            <div class="col-xs-12">
+              
+            </div>
+          </div>
+
+          
+
+
+          
+          
+          <div style="height: 50px;"></div>
+          
+        
+
+        <div class="site-footer">
+  
+  <div class="site-footer-item">
+    <a href="/about/" target="_blank">About</a>
+  </div>
+  
+  
+</div>
+
+      </div>
+    </div>
+  </article>
+  <script>
+    var postTitleValue = document.querySelector(".post-title").innerHTML.trim();
+    if (postTitleValue.slice(0, 2) === "加密") {
+      var oScript = document.createElement("script");
+      oScript.src = "/js/aes.js";
+      document.body.appendChild(oScript);
+    }
+  </script>
+  <script src="/js/highlight.pack.js"></script>
+
+
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  
+  
+    
+    
+  
+</script>
+<script src="/js/tj.js"></script>
+  
+  <script src="/js/blank.js"></script>
+</body>
+
+</html>
