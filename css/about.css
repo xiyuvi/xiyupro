@@ -1,0 +1,29 @@
+.markdown-body * {
+    box-sizing: content-box;
+}
+.markdown-body img {
+    background-color: transparent;
+}
+.markdown-body table {
+    margin-bottom: 0;
+    display: table;
+}
+.markdown-body table td, .markdown-body table th {
+    padding: 0;
+    border: none;
+}
+.post-content img {
+    margin-top: 0;
+}
+.mw-parser-output {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+}
+.wikipediauserbox {
+    margin:16px 0 0 0;
+    width:238px;
+    flex-shrink:0;
+    align-items: center;
+}
