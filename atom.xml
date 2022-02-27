@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://xiyuvi.github.io</id>
+    <id>https://xiyu.pro</id>
     <title>Xi Yu</title>
-    <updated>2022-02-27T08:25:07.545Z</updated>
+    <updated>2022-02-27T08:30:49.246Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://xiyuvi.github.io"/>
-    <link rel="self" href="https://xiyuvi.github.io/atom.xml"/>
+    <link rel="alternate" href="https://xiyu.pro"/>
+    <link rel="self" href="https://xiyu.pro/atom.xml"/>
     <subtitle>学海无涯，回头是岸</subtitle>
-    <logo>https://xiyuvi.github.io/images/avatar.png</logo>
-    <icon>https://xiyuvi.github.io/favicon.ico</icon>
+    <logo>https://xiyu.pro/images/avatar.png</logo>
+    <icon>https://xiyu.pro/favicon.ico</icon>
     <rights>All rights reserved 2022, Xi Yu</rights>
     <entry>
         <title type="html"><![CDATA[原神反人类的pc端操作体验]]></title>
-        <id>https://xiyuvi.github.io/post/14/</id>
-        <link href="https://xiyuvi.github.io/post/14/">
+        <id>https://xiyu.pro/post/14/</id>
+        <link href="https://xiyu.pro/post/14/">
         </link>
         <updated>2021-04-20T15:44:02.000Z</updated>
         <content type="html"><![CDATA[<p>  体验完原神后，感觉原神就是一款原生开发的手游大作，对pc端来说是没有细心打磨的移植作品。原神的优点很多，有优美的画风，有漂亮的建模，还有沉浸感十足的声优。从我个人的体验角度，原神对pc端的操作手感和交互逻辑还有特别大的进步空间。</p>
@@ -26,8 +26,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[在warframe里弹奏国际歌的正确姿态]]></title>
-        <id>https://xiyuvi.github.io/post/13/</id>
-        <link href="https://xiyuvi.github.io/post/13/">
+        <id>https://xiyu.pro/post/13/</id>
+        <link href="https://xiyu.pro/post/13/">
         </link>
         <updated>2020-12-16T15:42:57.000Z</updated>
         <content type="html"><![CDATA[<p>最近有很多朋友私聊我怎么弹奏国际歌，我也一一回复了弹奏代码和midi，还是有天诺不知道应该如何正确操作这些代码和midi，所以今天总结一下，希望通过这篇图文说明可以让国际歌唱响在wf宇宙中，同样适用于其他歌曲的弹奏。</p>
@@ -83,8 +83,8 @@ ShawzinBot国内下载链接为 <a href="https://wws.lanzoui.com/ipNaPjex8yd">�
     </entry>
     <entry>
         <title type="html"><![CDATA[我心中的脱口秀大会冠军不是王勉]]></title>
-        <id>https://xiyuvi.github.io/post/12/</id>
-        <link href="https://xiyuvi.github.io/post/12/">
+        <id>https://xiyu.pro/post/12/</id>
+        <link href="https://xiyu.pro/post/12/">
         </link>
         <updated>2020-09-24T15:40:37.000Z</updated>
         <content type="html"><![CDATA[<p>  脱口秀大会的冠军是王勉。脱口秀大会的冠军是王勉？用沈腾的话来说“我甚至都不知道这算不算脱口秀”。我觉得他更适合参加乐队的夏天。王勉的顺口溜脱口秀是用唱歌的方式，音乐的现场感染力本身就比文字更强一些，能看出现场观众和领笑员都很嗨，但是我个人认为脱口秀本身还是要有一些文本量来支撑自己的观点的，王勉的那首逃避称得上全场最佳十分精彩，可惜的是王勉之后的顺口溜脱口秀完全是一个模板工厂做出来的产品。这些产品有着雷同的旋律，固化的反转，甚至连反转时的怒吼都一样。</p>
@@ -94,8 +94,8 @@ ShawzinBot国内下载链接为 <a href="https://wws.lanzoui.com/ipNaPjex8yd">�
     </entry>
     <entry>
         <title type="html"><![CDATA[造谣人士生平事]]></title>
-        <id>https://xiyuvi.github.io/post/11/</id>
-        <link href="https://xiyuvi.github.io/post/11/">
+        <id>https://xiyu.pro/post/11/</id>
+        <link href="https://xiyu.pro/post/11/">
         </link>
         <updated>2020-09-08T15:39:22.000Z</updated>
         <content type="html"><![CDATA[<h2 id="过程">过程</h2>
@@ -144,8 +144,8 @@ ShawzinBot国内下载链接为 <a href="https://wws.lanzoui.com/ipNaPjex8yd">�
     </entry>
     <entry>
         <title type="html"><![CDATA[阿尔比恩如何获得白骨马]]></title>
-        <id>https://xiyuvi.github.io/post/10/</id>
-        <link href="https://xiyuvi.github.io/post/10/">
+        <id>https://xiyu.pro/post/10/</id>
+        <link href="https://xiyu.pro/post/10/">
         </link>
         <updated>2020-09-04T15:37:54.000Z</updated>
         <content type="html"><![CDATA[<h2 id="关于阿尔比恩">关于阿尔比恩</h2>
@@ -163,8 +163,8 @@ ShawzinBot国内下载链接为 <a href="https://wws.lanzoui.com/ipNaPjex8yd">�
     </entry>
     <entry>
         <title type="html"><![CDATA[ngnix使用CDN后正确获取访客IP]]></title>
-        <id>https://xiyuvi.github.io/post/9/</id>
-        <link href="https://xiyuvi.github.io/post/9/">
+        <id>https://xiyu.pro/post/9/</id>
+        <link href="https://xiyu.pro/post/9/">
         </link>
         <updated>2020-08-30T15:36:04.000Z</updated>
         <content type="html"><![CDATA[<p>如果是使用一层cdn，那么在nginx的配置文件http{}字段中加入</p>
@@ -182,8 +182,8 @@ ShawzinBot国内下载链接为 <a href="https://wws.lanzoui.com/ipNaPjex8yd">�
     </entry>
     <entry>
         <title type="html"><![CDATA[ngnix开启HSTS]]></title>
-        <id>https://xiyuvi.github.io/post/8/</id>
-        <link href="https://xiyuvi.github.io/post/8/">
+        <id>https://xiyu.pro/post/8/</id>
+        <link href="https://xiyu.pro/post/8/">
         </link>
         <updated>2020-08-17T15:32:39.000Z</updated>
         <content type="html"><![CDATA[<h2 id="什么是hsts">什么是HSTS</h2>
@@ -206,8 +206,8 @@ HSTS可以很大程度上解决SSL剥离攻击，因为只要浏览器曾经与�
     </entry>
     <entry>
         <title type="html"><![CDATA[安利一个steam上好玩的社工解密游戏《全网公敌》]]></title>
-        <id>https://xiyuvi.github.io/post/6/</id>
-        <link href="https://xiyuvi.github.io/post/6/">
+        <id>https://xiyu.pro/post/6/</id>
+        <link href="https://xiyu.pro/post/6/">
         </link>
         <updated>2020-07-28T15:31:39.000Z</updated>
         <content type="html"><![CDATA[<h2 id="发现宝藏游戏">发现宝藏游戏</h2>
@@ -256,8 +256,8 @@ HSTS可以很大程度上解决SSL剥离攻击，因为只要浏览器曾经与�
     </entry>
     <entry>
         <title type="html"><![CDATA[《二狗子汉奸李富贵》节选]]></title>
-        <id>https://xiyuvi.github.io/post/5/</id>
-        <link href="https://xiyuvi.github.io/post/5/">
+        <id>https://xiyu.pro/post/5/</id>
+        <link href="https://xiyu.pro/post/5/">
         </link>
         <updated>2020-07-07T15:29:34.000Z</updated>
         <content type="html"><![CDATA[<blockquote>
@@ -294,8 +294,8 @@ HSTS可以很大程度上解决SSL剥离攻击，因为只要浏览器曾经与�
     </entry>
     <entry>
         <title type="html"><![CDATA[如何清理域名解析的本地dns缓存]]></title>
-        <id>https://xiyuvi.github.io/post/4/</id>
-        <link href="https://xiyuvi.github.io/post/4/">
+        <id>https://xiyu.pro/post/4/</id>
+        <link href="https://xiyu.pro/post/4/">
         </link>
         <updated>2020-07-03T15:01:26.000Z</updated>
         <content type="html"><![CDATA[<p>清理本地缓存的快捷方法：</p>
