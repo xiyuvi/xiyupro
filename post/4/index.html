@@ -40,34 +40,20 @@
       
         <div class="animated fadeInLeft" style="animation-delay: 0.4s">
           <p class="my-4 text-gray-600 font-light hidden lg:block">
-            学海无涯，回头是岸
+            文章目录
           </p>
-          <div class="animated fadeInLeft social-container hidden lg:block" style="animation-delay: 0.6s">
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-                <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=20702001&amp;site=qq&amp;menu=yes" target="_blank" class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
-                  <i class="ri-qq-line"></i>
-                </a>
-              
-            
+          <div class="toc-container hidden lg:block">
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#1">1.</a></li>
+<li><a href="#2">2.</a></li>
+<li><a href="#3">3.</a></li>
+<li><a href="#4">4.</a></li>
+</ul>
+</li>
+</ul>
+
           </div>
         </div>
       
@@ -111,33 +97,59 @@
 </div>
 <div class="mask" onclick="closeMenu()">
 </div>
-      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4">
-        <h2 class="text-lg text-gray-700 mb-8">
-          <i class="ri-bookmark-2-line"></i> 标签云
-        </h2>
-        <div class="tags-container">
+      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
+        <h1 class="text-3xl font-bold lg:mt-16">如何清理域名解析的本地dns缓存</h1>
+        <div class="text-sm text-gray-700 lg:my-8">
+          2020-07-03 / 1 min read
+        </div>
+        
+        <div class="post-content yue">
+          <p>清理本地缓存的快捷方法：</p>
+<h2 id="1">1.</h2>
+<p>Win+R快捷键</p>
+<h2 id="2">2.</h2>
+<p>输入：cmd</p>
+<h2 id="3">3.</h2>
+<p>输入：ipconfig/flushdns 然后按回车<br>
+<img src="https://i.loli.net/2020/07/03/c4Le3O6rqEP9WIV.png" alt="1.png" loading="lazy"></p>
+<h2 id="4">4.</h2>
+<p>愉快的访问需要访问的网站</p>
+
+        </div>
+
+        
+          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://xiyu.pro/tag/it/">
+            <span class="flex-auto">IT</span>
+          </a>
+        
+
+
+        <div class="flex justify-between py-8">
           
-            <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://xiyu.pro/tag/encryption/" :style="{ 'animation-delay': `${0 * 0.2}s` }">
-              <span class="flex-auto">加密</span>
-              <span class="flex rounded-full bg-gray-200 px-2 py-1 text-xs ml-1">1</span>
-            </a>
+            <div class="prev-post">
+              <a href="https://xiyu.pro/post/5/">
+                <h3 class="post-title">
+                  <i class="ri-arrow-left-line"></i>
+                  《二狗子汉奸李富贵》节选
+                </h3>
+              </a>
+            </div>
           
-            <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://xiyu.pro/tag/it/" :style="{ 'animation-delay': `${1 * 0.2}s` }">
-              <span class="flex-auto">IT</span>
-              <span class="flex rounded-full bg-gray-200 px-2 py-1 text-xs ml-1">5</span>
-            </a>
+
           
-            <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://xiyu.pro/tag/game/" :style="{ 'animation-delay': `${2 * 0.2}s` }">
-              <span class="flex-auto">game</span>
-              <span class="flex rounded-full bg-gray-200 px-2 py-1 text-xs ml-1">4</span>
-            </a>
-          
-            <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://xiyu.pro/tag/diary/" :style="{ 'animation-delay': `${3 * 0.2}s` }">
-              <span class="flex-auto">diary</span>
-              <span class="flex rounded-full bg-gray-200 px-2 py-1 text-xs ml-1">4</span>
-            </a>
+            <div class="next-post">
+              <a href="https://xiyu.pro/post/3/">
+                <h3 class="post-title">
+                  解决typecho在微信内置浏览器中评论错误的问题
+                  <i class="ri-arrow-right-line"></i>
+                </h3>
+              </a>
+            </div>
           
         </div>
+
+        
+
       </div>
     </div>
 

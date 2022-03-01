@@ -40,34 +40,22 @@
       
         <div class="animated fadeInLeft" style="animation-delay: 0.4s">
           <p class="my-4 text-gray-600 font-light hidden lg:block">
-            学海无涯，回头是岸
+            文章目录
           </p>
-          <div class="animated fadeInLeft social-container hidden lg:block" style="animation-delay: 0.6s">
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-                <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=20702001&amp;site=qq&amp;menu=yes" target="_blank" class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
-                  <i class="ri-qq-line"></i>
-                </a>
-              
-            
+          <div class="toc-container hidden lg:block">
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E4%BB%80%E4%B9%88%E6%98%AFhsts">什么是HSTS</a><br>
+*
+<ul>
+<li><a href="#includesubdomains%E5%8F%82%E6%95%B0%E4%BC%9A%E4%BD%BF%E5%BE%97%E6%B5%8F%E8%A7%88%E5%99%A8%E5%9C%A8%E8%AF%B7%E6%B1%82%E6%89%80%E6%9C%89%E5%AD%90%E5%9F%9F%E5%90%8D%E6%97%B6%E9%83%BD%E5%BC%BA%E5%88%B6%E8%A6%81%E6%B1%82https%E5%8D%8F%E8%AE%AE%E5%A6%82%E6%9E%9C%E6%B2%A1%E6%9C%89%E7%BB%99%E6%89%80%E6%9C%89%E5%AD%90%E5%9F%9F%E5%90%8D%E9%83%BD%E6%B7%BB%E5%8A%A0ssl%E8%AF%81%E4%B9%A6%E7%9A%84%E6%89%93%E7%AE%97%E8%AF%B7%E4%B8%8D%E8%A6%81%E8%BE%93%E5%85%A5%E8%BF%99%E4%B8%AA%E5%8F%82%E6%95%B0">includeSubdomains参数会使得浏览器在请求所有子域名时都强制要求HTTPS协议，如果没有给所有子域名都添加SSL证书的打算，请不要输入这个参数</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
           </div>
         </div>
       
@@ -111,33 +99,65 @@
 </div>
 <div class="mask" onclick="closeMenu()">
 </div>
-      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4">
-        <h2 class="text-lg text-gray-700 mb-8">
-          <i class="ri-bookmark-2-line"></i> 标签云
-        </h2>
-        <div class="tags-container">
+      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
+        <h1 class="text-3xl font-bold lg:mt-16">ngnix开启HSTS</h1>
+        <div class="text-sm text-gray-700 lg:my-8">
+          2020-08-17 / 2 min read
+        </div>
+        
+        <div class="post-content yue">
+          <h2 id="什么是hsts">什么是HSTS</h2>
+<blockquote>
+<p>HTTP严格传输安全协议（英语：HTTP Strict Transport Security，简称：HSTS），是一套由互联网工程任务组发布的互联网安全策略机制。网站可以选择使用HSTS策略，来让浏览器强制使用HTTPS与网站进行通信，以减少会话劫持风险。<br>
+HSTS可以很大程度上解决SSL剥离攻击，因为只要浏览器曾经与服务器创建过一次安全连接，之后浏览器会强制使用HTTPS，即使链接被换成了HTTP。<br>
+##开启HSTS证书的前提##<br>
+正确设置了SSL证书，网站可以通过https协议正常访问<br>
+##ngnix如何开启HSTS##<br>
+在网站配置文件server{}中加入</p>
+</blockquote>
+<pre><code>add_header Strict-Transport-Security &quot;max-age=31536000;
+</code></pre>
+<p>如果追求更好的安全效果可以改成加入</p>
+<pre><code>add_header Strict-Transport-Security &quot;max-age=31536000; includeSubdomains; preload&quot;;
+
+</code></pre>
+<h4 id="includesubdomains参数会使得浏览器在请求所有子域名时都强制要求https协议如果没有给所有子域名都添加ssl证书的打算请不要输入这个参数">includeSubdomains参数会使得浏览器在请求所有子域名时都强制要求HTTPS协议，如果没有给所有子域名都添加SSL证书的打算，请不要输入这个参数</h4>
+
+        </div>
+
+        
+          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://xiyu.pro/tag/it/">
+            <span class="flex-auto">IT</span>
+          </a>
+        
+
+
+        <div class="flex justify-between py-8">
           
-            <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://xiyu.pro/tag/encryption/" :style="{ 'animation-delay': `${0 * 0.2}s` }">
-              <span class="flex-auto">加密</span>
-              <span class="flex rounded-full bg-gray-200 px-2 py-1 text-xs ml-1">1</span>
-            </a>
+            <div class="prev-post">
+              <a href="https://xiyu.pro/post/9/">
+                <h3 class="post-title">
+                  <i class="ri-arrow-left-line"></i>
+                  ngnix使用CDN后正确获取访客IP
+                </h3>
+              </a>
+            </div>
           
-            <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://xiyu.pro/tag/it/" :style="{ 'animation-delay': `${1 * 0.2}s` }">
-              <span class="flex-auto">IT</span>
-              <span class="flex rounded-full bg-gray-200 px-2 py-1 text-xs ml-1">5</span>
-            </a>
+
           
-            <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://xiyu.pro/tag/game/" :style="{ 'animation-delay': `${2 * 0.2}s` }">
-              <span class="flex-auto">game</span>
-              <span class="flex rounded-full bg-gray-200 px-2 py-1 text-xs ml-1">4</span>
-            </a>
-          
-            <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://xiyu.pro/tag/diary/" :style="{ 'animation-delay': `${3 * 0.2}s` }">
-              <span class="flex-auto">diary</span>
-              <span class="flex rounded-full bg-gray-200 px-2 py-1 text-xs ml-1">4</span>
-            </a>
+            <div class="next-post">
+              <a href="https://xiyu.pro/post/6/">
+                <h3 class="post-title">
+                  安利一个steam上好玩的社工解密游戏《全网公敌》
+                  <i class="ri-arrow-right-line"></i>
+                </h3>
+              </a>
+            </div>
           
         </div>
+
+        
+
       </div>
     </div>
 

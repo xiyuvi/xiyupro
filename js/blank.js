@@ -1,1 +1,0 @@
-(()=>{var t=[].slice.apply(document.getElementsByTagName("a")),o=window.location.host;t.forEach((function(t,a){if(!t.href)return!1;ohost=t.href.match(/:\/\/(.*?)\//i),ohost[1]!=o&&(t.target="_blank")}))})();

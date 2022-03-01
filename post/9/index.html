@@ -40,33 +40,9 @@
       
         <div class="animated fadeInLeft" style="animation-delay: 0.4s">
           <p class="my-4 text-gray-600 font-light hidden lg:block">
-            学海无涯，回头是岸
+            文章目录
           </p>
-          <div class="animated fadeInLeft social-container hidden lg:block" style="animation-delay: 0.6s">
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-                <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=20702001&amp;site=qq&amp;menu=yes" target="_blank" class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
-                  <i class="ri-qq-line"></i>
-                </a>
-              
+          <div class="toc-container hidden lg:block">
             
           </div>
         </div>
@@ -111,33 +87,60 @@
 </div>
 <div class="mask" onclick="closeMenu()">
 </div>
-      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4">
-        <h2 class="text-lg text-gray-700 mb-8">
-          <i class="ri-bookmark-2-line"></i> 标签云
-        </h2>
-        <div class="tags-container">
+      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
+        <h1 class="text-3xl font-bold lg:mt-16">ngnix使用CDN后正确获取访客IP</h1>
+        <div class="text-sm text-gray-700 lg:my-8">
+          2020-08-30 / 1 min read
+        </div>
+        
+        <div class="post-content yue">
+          <p>如果是使用一层cdn，那么在nginx的配置文件http{}字段中加入</p>
+<pre><code>    set_real_ip_from 0.0.0.0/0;
+    real_ip_header X-Forwarded-For;
+</code></pre>
+<p>即可。</p>
+<p>如果是使用了两层或以上cdn(使用了cdn和web防火墙也适用)，那么在nginx的配置文件http{}字段中加入</p>
+<pre><code>    set_real_ip_from 0.0.0.0/0;
+    real_ip_header X-Forwarded-For;
+    real_ip_recursive on;
+</code></pre>
+<p>即可。</p>
+
+        </div>
+
+        
+          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://xiyu.pro/tag/it/">
+            <span class="flex-auto">IT</span>
+          </a>
+        
+
+
+        <div class="flex justify-between py-8">
           
-            <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://xiyu.pro/tag/encryption/" :style="{ 'animation-delay': `${0 * 0.2}s` }">
-              <span class="flex-auto">加密</span>
-              <span class="flex rounded-full bg-gray-200 px-2 py-1 text-xs ml-1">1</span>
-            </a>
+            <div class="prev-post">
+              <a href="https://xiyu.pro/post/10/">
+                <h3 class="post-title">
+                  <i class="ri-arrow-left-line"></i>
+                  阿尔比恩如何获得白骨马
+                </h3>
+              </a>
+            </div>
           
-            <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://xiyu.pro/tag/it/" :style="{ 'animation-delay': `${1 * 0.2}s` }">
-              <span class="flex-auto">IT</span>
-              <span class="flex rounded-full bg-gray-200 px-2 py-1 text-xs ml-1">5</span>
-            </a>
+
           
-            <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://xiyu.pro/tag/game/" :style="{ 'animation-delay': `${2 * 0.2}s` }">
-              <span class="flex-auto">game</span>
-              <span class="flex rounded-full bg-gray-200 px-2 py-1 text-xs ml-1">4</span>
-            </a>
-          
-            <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://xiyu.pro/tag/diary/" :style="{ 'animation-delay': `${3 * 0.2}s` }">
-              <span class="flex-auto">diary</span>
-              <span class="flex rounded-full bg-gray-200 px-2 py-1 text-xs ml-1">4</span>
-            </a>
+            <div class="next-post">
+              <a href="https://xiyu.pro/post/8/">
+                <h3 class="post-title">
+                  ngnix开启HSTS
+                  <i class="ri-arrow-right-line"></i>
+                </h3>
+              </a>
+            </div>
           
         </div>
+
+        
+
       </div>
     </div>
 

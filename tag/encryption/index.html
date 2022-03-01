@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -27,7 +26,7 @@
 
   </head>
   <body>
-    <div class="main px-4 flex flex-col lg:flex-row">
+    <div id="app" class="main px-4 flex flex-col lg:flex-row">
       <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
   <div class="lg:sticky top-0">
     <div class="sidebar-content">
@@ -113,9 +112,8 @@
 <div class="mask" onclick="closeMenu()">
 </div>
       <div class="content-wrapper py-32 lg:p-8 lg:w-3/4">
-        <h2 class="latest-article text-lg text-gray-700 mb-8">
-          <i class="ri-article-line"></i>
-          最新文章
+        <h2 class="text-lg text-gray-700 mb-8">
+          <i class="ri-bookmark-line"></i> 加密
         </h2>
         
   <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${0 * 0.2}s` }">
@@ -136,155 +134,11 @@
     </div>
   </section>
 
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${1 * 0.2}s` }">
-    
-      <a href="https://xiyu.pro/post/14/" class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40">
-        <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="'https://s4.ax1x.com/2022/02/27/beUSZF.md.jpg'">
-        </div>
-      </a>
-    
-    <div class="content">
-      <a href="https://xiyu.pro/post/14/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">原神反人类的pc端操作体验</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        
-      </div>
-      <div class="text-gray-400 text-sm font-light">2021-04-20 / 5 min read</div>
-    </div>
-  </section>
-
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${2 * 0.2}s` }">
-    
-      <a href="https://xiyu.pro/post/13/" class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40">
-        <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="'https://s4.ax1x.com/2022/02/27/beNluT.md.jpg'">
-        </div>
-      </a>
-    
-    <div class="content">
-      <a href="https://xiyu.pro/post/13/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">在warframe里弹奏国际歌的正确姿态</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        
-      </div>
-      <div class="text-gray-400 text-sm font-light">2020-12-16 / 3 min read</div>
-    </div>
-  </section>
-
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${3 * 0.2}s` }">
-    
-    <div class="content">
-      <a href="https://xiyu.pro/post/12/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">我心中的脱口秀大会冠军不是王勉</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        
-      </div>
-      <div class="text-gray-400 text-sm font-light">2020-09-24 / 2 min read</div>
-    </div>
-  </section>
-
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${4 * 0.2}s` }">
-    
-    <div class="content">
-      <a href="https://xiyu.pro/post/11/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">造谣人士生平事</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        
-      </div>
-      <div class="text-gray-400 text-sm font-light">2020-09-08 / 9 min read</div>
-    </div>
-  </section>
-
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${5 * 0.2}s` }">
-    
-    <div class="content">
-      <a href="https://xiyu.pro/post/10/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">阿尔比恩如何获得白骨马</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        
-      </div>
-      <div class="text-gray-400 text-sm font-light">2020-09-04 / 1 min read</div>
-    </div>
-  </section>
-
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${6 * 0.2}s` }">
-    
-    <div class="content">
-      <a href="https://xiyu.pro/post/9/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">ngnix使用CDN后正确获取访客IP</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        
-      </div>
-      <div class="text-gray-400 text-sm font-light">2020-08-30 / 1 min read</div>
-    </div>
-  </section>
-
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${7 * 0.2}s` }">
-    
-    <div class="content">
-      <a href="https://xiyu.pro/post/8/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">ngnix开启HSTS</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        
-      </div>
-      <div class="text-gray-400 text-sm font-light">2020-08-17 / 2 min read</div>
-    </div>
-  </section>
-
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${8 * 0.2}s` }">
-    
-      <a href="https://xiyu.pro/post/6/" class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40">
-        <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="'https://s4.ax1x.com/2022/02/27/bet610.jpg'">
-        </div>
-      </a>
-    
-    <div class="content">
-      <a href="https://xiyu.pro/post/6/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">安利一个steam上好玩的社工解密游戏《全网公敌》</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        
-      </div>
-      <div class="text-gray-400 text-sm font-light">2020-07-28 / 4 min read</div>
-    </div>
-  </section>
-
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${9 * 0.2}s` }">
-    
-    <div class="content">
-      <a href="https://xiyu.pro/post/5/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">《二狗子汉奸李富贵》节选</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        
-      </div>
-      <div class="text-gray-400 text-sm font-light">2020-07-07 / 4 min read</div>
-    </div>
-  </section>
-
-        <div class="read-more">
-          
-            <a href="https://xiyu.pro/page/2" class="animated fadeIn font-extrabold text-gray-700 hover:text-gray-900 more-btn">
-              阅读更多
-              <i class="ri-arrow-right-line"></i>
-            </a>
-          
-        </div>
-        <div class="index-page">
-          <div class="pagination-container animated fadeIn">
+        <div class="pagination-container animated fadeIn">
   
-  
-    <a href="https://xiyu.pro/page/2" class="page-btn">下一页 <i class="ri-arrow-right-line"></i></a>
   
 </div>
 
-        </div>
       </div>
     </div>
 
